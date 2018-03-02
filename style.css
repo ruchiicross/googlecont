@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+.navbar-default{
+    border: none;
+    background: #2a56c6;
+}
+#nav2{
+  display: none;
+  border: none;
+  overflow: hidden;
+    
+}
+.btn-link{
+    float: left;
+    margin-top: 9px;
+    margin-right: 28px;
+    font-size: 22px;
+    
+}
+.navbar-brand{
+    font-size: 24px;
+   margin-right: 20px;
+
+}
+#navbar-brand{
+  display: none;
+}
+.list-group{
+    margin-top: 20px;
+    margin-right: -60px;
+    padding: 0px;
+}
+.list-group a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 16px;
+}
+.form-control{
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+}
+.form-control::placeholder{
+    font-size: 19px;
+}
+ .list{
+  margin-top: -32px;
+  margin-left: 0px;
+  margin-right: 20px; 
+  float: right;
+}
+#wrapper {
+    padding-left: 0;
+    transition: all 0.5s ease;
+    overflow-x: hidden;
+    margin-top: -20px;
+  }
+  
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: none;
+    transition: all 0.5s ease;
+  }
+  .letter{
+    
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  }
+  
+  #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+  
+  .sidebar-nav {
+    position: absolute;
+   top: 0px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid gainsboro;
+    background: none!important;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 50px;
+  }
+  .sidebar-nav span{
+      margin-right: 10px;
+  }
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    font-weight: bold;
+  }
+  .sidebar-nav li a:active{
+ 
+
+  }
+  .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #616161;
+    background: #f5f5f5;
+  }
+  
+  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+  
+  .table td{
+      border: none !important;
+      padding: 15px !important;
+      
+  }
+  .table td span{
+    margin-right: 20px;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-size: 13px;
+    height: 10px !important;
+  }
+  .checkbox{
+    display: none;
+    margin-right: 20px!important;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 9px;
+    width: 20px;
+    height: 14px !important;
+  }
+  .edit{
+    display: none;
+    margin-left: 40px;
+    color: gray; 
+  }
+  .edit i{
+    margin: 5px;
+  }
+  .modal {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    /* transform: translate(-50%, -50%); */
+  }
+  .add-new{
+    color:#fff;
+    background:rgb(233, 9, 57); 
+    font-size: 25px; 
+    text-decoration: none; 
+    padding: 4px 15px 4px 15px; 
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    right: 20px;
+    bottom: 20px;
+  }
+  .form-control:focus{
+    border: none;
+    border-bottom: 2px solid  red;
+    outline: none!important;
+  }
+  @media(max-width:768px) {
+    #wrapper {
+      padding-left: 0;
+    }
+    #wrapper.toggled {
+      padding-left: 250px;
+    }
+    #sidebar-wrapper {
+      width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+    #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+    }
+    #navbar-brand1{
+      display: none;
+    }
+    #navbar-brand{
+      display: inline-block;
+    }
+    #number{
+      display: none;
+    }
+    #nav1{
+      display: none;
+    }
+    #nav2{
+      display: block;
+    }
+  }
